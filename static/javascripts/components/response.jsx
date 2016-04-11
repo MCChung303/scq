@@ -19,8 +19,9 @@ var ResponseCard = React.createClass({
     },
 
     render: function(){
+
         return(
-            <div className="updates mdl-card-12">
+            <div className="updates mdl-card">
                 {JSON.stringify(this.state.results)}
             </div>
         );
