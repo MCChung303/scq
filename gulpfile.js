@@ -27,8 +27,9 @@ js_files = [
     './static/javascripts/components/response.jsx',
     './static/javascripts/components/search_card.jsx',
     './static/javascripts/components/search_card.jsx',
-    './static/javascripts/components/response.jsx'
-    './static/javascripts/components/help.jsx'
+    './static/javascripts/components/response.jsx',
+    './static/javascripts/components/help.jsx',
+    ]
 
 
 // Lint Task

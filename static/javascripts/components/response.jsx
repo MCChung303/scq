@@ -19,11 +19,23 @@ var ResponseCard = React.createClass({
     },
 
     render: function(){
-
-        return(
-            <div className="updates mdl-card">
-                {JSON.stringify(this.state.results)}
-            </div>
+        var questionNodes = this.state.results.map(function(item){
+                if(item.response_format == "rating")  {
+                    var data = {
+                      series : item.bar_data.series,
+                      labels : item.bar_data.labels
+                    };
+                    var options = {
+                        seriesBarDistance: 15
+                    };
+                new Chartist.Bar('.chart', data, options)
+            } });
+              return (
+        <div className="updates chart mdl-card">
+            </div>     
+        
         );
     },
+                                                   
+                                                   
 });
